@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/fancydropdown.min.css">
+</head>
+
+<body>
+
+  <label for="custom_fancy_dropdown">Custom field:</label>
+  <select name="regular_select" id="regular_select">
+    <option value="custom_value1">Custom value 1</option>
+    <option value="custom_value2">Custom value 2</option>
+    <option value="custom_value3">Custom value 3</option>
+  </select>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/fancyDropdown.min.js"></script>
+
+  <script type="text/javascript">
+    
+    $(document).ready(function() {
+
+      $("#regular_select").fancyDropdown();
+    });
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+/* fancyDropdown plugin developed by Santiago Salamanca */
+
+.fancy_dropdown {
+      border: 1px solid #d8d8d8;
+      border-radius: 3px;
+      background-color: #ffffff;
+      width:240px;
+      height: 40px;
+      line-height: 40px;
+      text-align: left;
+      cursor: pointer;
+      position: relative;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAC33pUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHja7ZZLkuQoEET3nKKPQPwIOA4IYTY3mOO3g8hv1YxZd89iFilMEopEHoE/RFU4//5rhB84qEgMap5TSSni0KKFKzo5Xsd1p6jruh/irfMSD/cfGCHBXa7HdO7xFXF7vOC64+01HvzYOnkL3ZS3oMzMjE7fRW4h4StO+zkUvjo1PU1nn22/vDLHr8/qMKMb9IQDn0IS15WvTHKdFSfhSkIYGKWgr/iliq2Rb/6F+Ozhm4H33pt/8dhxedhxCd2mld582nGy7/1bLj1XRHzPzM8VOd9TfPFvjJ7HOK/ZVU0BdqU9qdtUVg8DG+yU9VpCc5yGvq9W0HKs8QC1jqm2EBseCjEcH6TUqdKgc90POlCi8skojZkPlhXL4lz4WDB0NhrsATS6ZNA4QE4ml3sttPKWmQ/JMjJ3wkgmiIHxawvvgd9tL0JjzGVOFPPdK9TFc9WgjEluXjEKQGhsT235S+G6xfdjghUQtGVzxgRrbJdEM3qsLVmcJVrAUI3X90LetwAsQm5DMVjXSjGRGCXCemAngo8ZfCoqZ1FuIEAWjDuqZBVJgJN55sY7TmssG19hbC8AYZLEgQafC2CpmiZ8bxlLqAYTUzNL5patWE2SNFlKydPcp6qLq5snd89evGbJmi2n7DnnkmvhItjGLJRUvORSSq1IWrVCq2J8RaBxk6bNWmreciutHlg+hx52pMOPfJSjdu7SsQWEnrr33EuvJ51YSqeedqbTz3yWsw6stSFDh400fORRRr1T21Rfqb2T+3dqtKnxAjXH+YMawu43CZrbiU1mIMZKIO6TABY0T2YxkypPcpNZLCxBxBhV2oTTaRIDQT2JbdCd3YPcP3ILcPdXufF35MJE91+QCxPdE7mv3L6h1uvabmUBml8hPMUOKfj86lAjtfnX5Tfv4U8FPkIfoY/QR+gj9BH6CP2fhBz/OpTwE5liLxPOY/lNAAABJGlDQ1BJQ0MgcHJvZmlsZQAAKJGdkL1KxFAQhb+souJfoWIhFimshAUbt7JZFYKgEOMKRqtsksXFJIYky7Jv4Jvow2whCD6BT6Bg7bnRwsI0DgzzMcycM/dCy07CtJzdgzSrCsfr+lf+tT3/hsUSq+yyFoRl3nXdUxrj81XTipe20Wqe+zPmorgMVafKLMyLCqwDcWdc5YaVbNz1vCPxg9iO0iwSP4l3ojQybHa9NBmFP5rmmuU4u7wwfeU2Diec4WLTZ8SQhIq2aqbOMR32VR0KAiaUhKoJsXpjzVTcikopORyKeiJd0+C3Vfu5culLYygt43BPKk3jh/nf77WP83rT2pzmQRHUrRllazCA90dY8WH9GRZvGrwWfr+tYaZTz/zzjV/SmVBac9QBMgAAAAJiS0dEAP+Hj8y/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH5AELDio1mCZ4hAAAALVJREFUKM+N0NFNw0AQhOHPFzpIoIVYQqKF2EqKoqLQREhMCXmwZKWGuIPo4OGwfQ4gMY+7o535t3g10wrXfBBm67Wz1vNfhlIjiA7K3wxr7wo7G9HHdCWM66OFrdZF7eY4WJJhqRFUWnCxFR08TYbgpNaNcZ1a4xOKO8wfCv5lePSWo6G0t4IHEFWqrEXpROqQLvQz+uEjfd5hop8+4p4iHUaOnFN0NqLCLvvId0lj0Aspe9AXlqIwv/92CfYAAAAASUVORK5CYII=);
+      background-repeat: no-repeat;
+      background-position: 97% 12px;
+}
+.fancy_dropdown ul {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box !important;
+      cursor: pointer;
+      list-style: none;
+}
+.fancy_dropdown ul li {
+      height: 40px;
+      line-height:40px;
+      background-color: #ffffff;
+      border: 1px solid #d8d8d8;
+      border-bottom: none;
+      border-top-style: dashed;
+      padding-left: 10px;
+      font-size: 14px;
+      overflow:hidden;
+      text-overflow: ellipsis;
+}
+.fancy_dropdown ul li:hover {
+      background-color: #FC8C1B !important;
+      color: #ffffff;
+}
+.fancy_dropdown ul li:last-child {
+      border: 1px dashed #d8d8d8;
+}
+.fancy_dropdown ul li:first-child {
+      border: none;
+}
+.fancy_dropdown ul > ul li {
+      display: none;
+}
+.fancy_dropdown.visible {
+      border: 1px solid #444444;
+}
+.fancy_dropdown span {
+      padding: 0 10px;
+      font-size: 16px;
+}
+@media (max-width: 800px) {
+      .fancy_dropdown {
+            width: 100%;
+      }
+}
+@media (max-width: 500px) {
+      .fancy_dropdown {
+            width: 100%;
+      }
+}
+.fancy_dropdown_options {
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: 0 15px 20px -5px rgba(0,0,0,0.3);
+  margin-top: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.fancy_dropdown.visible .fancy_dropdown_options {
+      margin-top: 0px;
+      opacity: 1;
+      visibility: visible;
+}
